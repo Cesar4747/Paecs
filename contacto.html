@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto — Repositorio Digital EPO Núm. 05</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== ENCABEZADO ===== -->
+  <header class="site-header">
+    <div class="header-left">
+      <div class="header-logo">EPO</div>
+      <div>
+        <div class="header-school-name">Escuela Preparatoria Oficial Núm. 05</div>
+        <div class="header-location">📍 Almoloya de Juárez, Estado de México</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="header-repo-title">Repositorio Digital Educativo</div>
+      <div class="header-project">Proyecto PAEC</div>
+    </div>
+  </header>
+
+  <!-- ===== NAVEGACIÓN ===== -->
+  <nav class="site-nav">
+    <ul class="nav-list">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="paec.html">Proyecto PAEC</a></li>
+      <li><a href="matematicas.html">Pensamiento Lógico-Matemático</a></li>
+      <li><a href="lectura.html">Comprensión Lectora</a></li>
+      <li><a href="lengua.html">Estructura de la Lengua</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== CONTENIDO PRINCIPAL ===== -->
+  <main>
+
+    <h1 class="page-title">📬 Contáctanos</h1>
+    <p class="page-subtitle">
+      ¿Tienes dudas o comentarios sobre el proyecto? Escríbenos o encuéntranos en nuestras redes sociales.
+    </p>
+
+    <!-- ===== GRID SUPERIOR: 3 tarjetas ===== -->
+    <div class="contact-grid">
+
+      <!-- Tarjeta 1: Información institucional -->
+      <div class="card">
+        <div class="card-icon">🏫</div>
+        <h3 class="card-title">Información Institucional</h3>
+        <div class="contact-info-item">
+          <span class="ci-icon">📧</span>
+          <div>
+            <strong>Correo institucional</strong><br>
+            <a href="mailto:contacto.epo05@gmail.com" style="color:#003366; text-decoration:underline;">
+              contacto.epo05@gmail.com
+            </a>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <span class="ci-icon">👩‍🏫</span>
+          <div>
+            <strong>Docentes responsables</strong><br>
+            Academia de tercer grado
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <span class="ci-icon">📚</span>
+          <div>
+            <strong>Proyecto</strong><br>
+            PAEC — Generación 2023–2026
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2: Redes sociales -->
+      <div class="card" style="display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:14px;">
+        <div class="card-icon">📱</div>
+        <h3 class="card-title">Redes Sociales</h3>
+        <p class="card-text" style="margin-bottom:16px;">
+          Síguenos en nuestras redes para contenido educativo adicional y novedades del proyecto.
+        </p>
+        <a href="https://www.facebook.com/share/14kM6PQGwj1/" target="_blank" class="btn-fb">
+          📘 Facebook Institucional
+        </a>
+      </div>
+
+      <!-- Tarjeta 3: Ubicación -->
+      <div class="card">
+        <div class="card-icon">📍</div>
+        <h3 class="card-title">Ubicación</h3>
+        <p class="card-text" style="margin-bottom:12px;">
+          Almoloya de Juárez, Estado de México
+        </p>
+        <!-- Mapa de Google Maps real -->
+        <iframe
+          src="https://maps.google.com/maps?q=Escuela+Preparatoria+Oficial+Num+05+Almoloya+de+Juarez&output=embed&z=16"
+          width="100%"
+          height="180"
+          style="border:0; border-radius:10px; display:block; margin-top:12px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación EPO Núm. 05 — Almoloya de Juárez">
+        </iframe>
+        <p style="font-size:0.8rem; color:#4a5568; margin-top:8px; text-align:center;">
+          <a href="https://maps.app.goo.gl/FXiYysmtEp2pausF7y" target="_blank" style="color:#003366; font-weight:600;">
+            📍 Ver en Google Maps
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+    <!-- ===== TARJETA CENTRAL INFERIOR: Formulario ===== -->
+    <div class="contact-form-wrap">
+      <div class="card">
+        <h3 class="card-title" style="text-align:center; margin-bottom:24px;">✉️ Envíanos un Mensaje</h3>
+
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Tu nombre completo"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="correo">Correo Electrónico</label>
+          <input
+            type="email"
+            id="correo"
+            name="correo"
+            placeholder="correo@ejemplo.com"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Escribe tu Mensaje</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Escribe aquí tus dudas, comentarios o sugerencias..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-submit">
+          <button type="button" class="btn-submit" onclick="enviarMensaje()">
+            📨 Enviar
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-info">
+        <p><strong>Equipo desarrollador:</strong> "Los Hollows"</p>
+        <p>Sexto semestre · Generación 2023–2026</p>
+        <p>Fecha de elaboración: Junio 2026</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/14kM6PQGwj1/" target="_blank">📘 Facebook Institucional</a>
+      </div>
+    </div>
+    <div class="footer-copy">© Escuela Preparatoria Oficial Núm. 05 — Todos los derechos reservados</div>
+  </footer>
+
+  <!-- Script básico del formulario -->
+  <script>
+    function enviarMensaje() {
+      const nombre  = document.getElementById('nombre').value.trim();
+      const correo  = document.getElementById('correo').value.trim();
+      const mensaje = document.getElementById('mensaje').value.trim();
+
+      if (!nombre || !correo || !mensaje) {
+        alert('Por favor, completa todos los campos antes de enviar.');
+        return;
+      }
+
+      // Simulación de envío exitoso
+      alert('¡Gracias, ' + nombre + '! Tu mensaje ha sido recibido. Te responderemos pronto.');
+      document.getElementById('nombre').value  = '';
+      document.getElementById('correo').value  = '';
+      document.getElementById('mensaje').value = '';
+    }
+  </script>
+
+</body>
+</html>
